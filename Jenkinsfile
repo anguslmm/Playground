@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 cmakeBuild
-                    buildDir: 'build',
                     installation: 'InSearchPath',
                     steps: [
                         [args: 'all']
